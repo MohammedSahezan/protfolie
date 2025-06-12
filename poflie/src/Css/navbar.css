@@ -1,0 +1,15 @@
+ul {
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    gap: 80px;
+}
+
+ul li {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 70%;
+    text-align: center;
+}

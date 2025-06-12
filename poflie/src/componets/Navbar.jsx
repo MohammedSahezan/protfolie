@@ -1,19 +1,30 @@
-import React from 'react'
+import React from "react";
+import {  NavLink } from "react-router-dom";
+import '../Css/navbar.css';
+
 
 const Navbar = () => {
   return (
-    <nav className='bg-green-500 w-full h-[50px]   '>
-      <div className="flex justify-evenly aline-center   ">
-      <a href="" className=''>HOME</a>
-      <a href="">PROJECT</a>
-      <a href="">CONTACT</a>
-      <a href="">ABOUT</a>
-      <a href="">LOGO</a>
-      </div>
+    <div className=" w-[130px] items-center h-screen  flex justify-items-end bg-red-400  items-center pl-3 fixed right-0     ">
+      <ul className="flex  justify-between flex-col pl-3 addli   ">
+        <NavLink to='/'>
+          <li>Home</li>
+        </NavLink>
+        <NavLink to='/About-us'>
+          
+          <li>AboutUs</li>
+        </NavLink>
+        <NavLink to='/Project'>
+          
+          <li>Project</li>
+        </NavLink>
 
+        <NavLink to='/contact-us'>
+          <li>Contact</li>
+        </NavLink>
+      </ul>
+    </div>
+  );
+};
 
-    </nav>
-  )
-}
-
-export default Navbar
+export default Navbar;
